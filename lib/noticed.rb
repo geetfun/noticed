@@ -15,6 +15,7 @@ module Noticed
     autoload :ActionCable, "noticed/delivery_methods/action_cable"
     autoload :Database, "noticed/delivery_methods/database"
     autoload :Email, "noticed/delivery_methods/email"
+    autoload :Vonage, "noticed/delivery_methods/message_bus"
     autoload :Slack, "noticed/delivery_methods/slack"
     autoload :Test, "noticed/delivery_methods/test"
     autoload :Twilio, "noticed/delivery_methods/twilio"
