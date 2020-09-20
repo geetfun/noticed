@@ -3,7 +3,7 @@ module Noticed
     class MessageBus < Base
 
       def deliver
-        MessageBus.publish "/#{channel}", format, client_ids: client_ids, user_ids: user_ids, group_ids: group_ids
+        ::MessageBus.publish "/#{channel}", format, client_ids: client_ids, user_ids: user_ids, group_ids: group_ids
       end
 
       private
